@@ -1,6 +1,6 @@
 #folder
 /.terraform
-
+/log
 #Files
 .terraform.lock.hcl
 terraform.tfstate
