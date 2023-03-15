@@ -62,7 +62,7 @@ variable "backend_s3" {
   description = "Generic clinic api name"
 }
 
-variable "resource_fronted_s3" {
+variable "resource_frontend_s3" {
   type        = string
   description = "Resource policy for s3"
 }

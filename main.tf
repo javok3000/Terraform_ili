@@ -51,7 +51,7 @@ resource "aws_s3_bucket_policy" "frontend_policy" {
         Effect    = "Allow",
         Principal = "*",
         Action    = "s3:GetObject",
-        Resource  = var.resource_fronted_s3
+        Resource  = var.resource_frontend_s3
       }
     ]
   })
