@@ -1,18 +1,14 @@
-# variable "access_key" {
-#   description = "Access-key-for-AWS"
-#   default     = "No access key found"
-# }
- 
-# variable "secret_key" {
-#   description = "Secret-key-for-AWS"
-#   default     = "No secret key found"
-# }
-
 variable "name" {
   type        = string
   default     = "ILITIA_API_<nombre_clinica>"
   description = "EC2 Name"
 }
+
+variable "elastic_ip_name" {
+  type        = string
+  description = "Elastic IP name"
+}
+
 
 variable "ami" {
   type        = string
@@ -51,9 +47,32 @@ variable "region" {
   description = "description"
 }
 
-variable subnet_ids {
+variable "subnet_ids" {
   type        = list
   description = "List of subnet in default vpc"
 }
 
+variable "frontend_s3" {
+  type        = string
+  description = "Generic clinic frontend name"
+}
 
+variable "backend_s3" {
+  type        = string
+  description = "Generic clinic api name"
+}
+
+variable "resource_fronted_s3" {
+  type        = string
+  description = "Resource policy for s3"
+}
+
+variable "referer_backend_s3" {
+  type        = list
+  description = "AWS:Reference policy for s3"
+}
+
+variable "resource_backend_s3" {
+  type        = string
+  description = "Resource policy for s3"
+}
