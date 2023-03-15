@@ -1,13 +1,3 @@
-# variable "access_key" {
-#   description = "Access-key-for-AWS"
-#   default     = "No access key found"
-# }
- 
-# variable "secret_key" {
-#   description = "Secret-key-for-AWS"
-#   default     = "No secret key found"
-# }
-
 variable "name" {
   type        = string
   default     = "ILITIA_API_<nombre_clinica>"
