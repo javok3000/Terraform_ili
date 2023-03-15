@@ -1,0 +1,10 @@
+#folder
+/.terraform
+
+#Files
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+tfplan
+terraform.tfvars
+.env
