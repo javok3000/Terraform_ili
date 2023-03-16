@@ -1,6 +1,5 @@
 variable "name" {
   type        = string
-  default     = "ILITIA_API_<nombre_clinica>"
   description = "EC2 Name"
 }
 
@@ -41,9 +40,32 @@ variable "region" {
   description = "description"
 }
 
-variable subnet_ids {
+variable "subnet_ids" {
   type        = list
   description = "List of subnet in default vpc"
 }
 
+variable "frontend_s3" {
+  type        = string
+  description = "Generic clinic frontend name"
+}
 
+variable "backend_s3" {
+  type        = string
+  description = "Generic clinic api name"
+}
+
+variable "resource_frontend_s3" {
+  type        = string
+  description = "Resource policy for s3"
+}
+
+variable "referer_backend_s3" {
+  type        = list
+  description = "AWS:Reference policy for s3"
+}
+
+variable "resource_backend_s3" {
+  type        = string
+  description = "Resource policy for s3"
+}
