@@ -1,14 +1,7 @@
 variable "name" {
   type        = string
-  default     = "ILITIA_API_<nombre_clinica>"
   description = "EC2 Name"
 }
-
-variable "elastic_ip_name" {
-  type        = string
-  description = "Elastic IP name"
-}
-
 
 variable "ami" {
   type        = string
