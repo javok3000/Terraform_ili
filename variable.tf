@@ -55,6 +55,7 @@ variable "backend_s3" {
   description = "Generic clinic api name"
 }
 
+
 variable "resource_frontend_s3" {
   type        = string
   description = "Resource policy for s3"
@@ -69,3 +70,24 @@ variable "resource_backend_s3" {
   type        = string
   description = "Resource policy for s3"
 }
+
+variable "origin_domain" {
+  type        = string
+  description = "S3 Origin domain for CloudFront"
+}
+
+variable "comment_cloudfront" {
+  type        = string
+  description = "Description related to the clinic name"
+}
+
+variable "cname" {
+  type        = list
+  description = "List of CNAME for CloudFront"
+}
+
+variable "domain_name" {
+  type        = string
+  description = "Domain name obv"
+}
+
