@@ -101,3 +101,7 @@ variable "front_name" {
   description = "Route 53 registry front name"
 }
 
+variable "cert_arn" {
+  type        = string
+  description = "test"
+}
