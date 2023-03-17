@@ -91,3 +91,13 @@ variable "domain_name" {
   description = "Domain name obv"
 }
 
+variable "api_name" {
+  type        = string
+  description = "Route 53 registry api name"
+}
+
+variable "front_name" {
+  type        = string
+  description = "Route 53 registry front name"
+}
+

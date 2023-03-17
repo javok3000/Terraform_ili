@@ -9,5 +9,6 @@ terraform {
 }
 
 provider "aws" {
-  region   = var.region
+  alias   = "acm_provider" 
+  region  = var.region
 }
