@@ -21,7 +21,6 @@ variable "instance_type" {
   sensitive   = true
 }
 
-
 variable "group_id" {
   type        = list
   description = "Security group"
@@ -96,7 +95,6 @@ variable "ilitia_domain" {
   description = "ACM"
 }
 
-
 variable "api_name" {
   type        = string
   description = "Route 53 registry api name"
@@ -110,4 +108,9 @@ variable "front_name" {
 variable "cert_arn" {
   type        = string
   description = "test"
+}
+
+variable "ilitia_cache" {
+  type        = string
+  description = "Cache policy for Cloudfront"
 }

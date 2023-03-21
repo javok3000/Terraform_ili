@@ -24,6 +24,7 @@ resource "aws_cloudfront_distribution" "frontend_cloudfront" {
     viewer_protocol_policy = "redirect-to-https" # other options allow-all or https-only
     target_origin_id       = aws_s3_bucket.frontend_s3.id
     cached_methods         = ["GET", "HEAD"]
+    cache_policy_id        = var.ilitia_cache
   
   }
 
