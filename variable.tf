@@ -86,10 +86,16 @@ variable "cname" {
   description = "List of CNAME for CloudFront"
 }
 
-variable "domain_name" {
+variable "ilitia" {
   type        = string
-  description = "Domain name obv"
+  description = "For Route 53"
 }
+
+variable "ilitia_domain" {
+  type        = string
+  description = "ACM"
+}
+
 
 variable "api_name" {
   type        = string
